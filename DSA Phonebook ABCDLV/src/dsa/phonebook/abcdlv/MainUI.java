@@ -90,6 +90,8 @@ public class MainUI extends javax.swing.JFrame {
             }
         });
         jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable1.setRowSelectionAllowed(true);
+        jTable1.setShowGrid(true);
         jScrollPane1.setViewportView(jTable1);
 
         jLabel3.setText("Number");

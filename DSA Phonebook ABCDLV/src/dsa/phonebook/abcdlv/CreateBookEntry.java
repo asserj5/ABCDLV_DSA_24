@@ -62,13 +62,13 @@ public class CreateBookEntry extends javax.swing.JFrame {
 
         addressInput.setText("address");
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Last Name");
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("First Name");
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Number");
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("Address");
 
         jLabel5.setText("Create a Record");
 
@@ -89,7 +89,7 @@ public class CreateBookEntry extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(addressInput)
                     .addComponent(numberInput)
@@ -144,9 +144,9 @@ public class CreateBookEntry extends javax.swing.JFrame {
         addressInput.getText();
         String input = (lastnameInput.getText() + "," + nameInput.getText() + "," +numberInput.getText()+ "," +addressInput.getText());
         ReadWriteFile info = new ReadWriteFile();
-        info.fileWriter(input);
-        AutoIncrementHashMap info = new AutoIncrementHashMap();
-        info.put(input);
+        //info.fileWriter(input);
+        //AutoIncrementHashMap info = new AutoIncrementHashMap();
+        //info.put(input);
         
     }//GEN-LAST:event_createButtonActionPerformed
 
