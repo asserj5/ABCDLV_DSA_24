@@ -8,12 +8,12 @@ package dsa.phonebook.abcdlv;
  *
  * @author Leon Riekert
  */
-public class CreateBookEntry extends javax.swing.JFrame {
+public class CreateBookEntry_1 extends javax.swing.JFrame {
 
     /**
      * Creates new form CreateBookEntry
      */
-    public CreateBookEntry() {
+    public CreateBookEntry_1() {
         initComponents();
     }
 
@@ -62,13 +62,13 @@ public class CreateBookEntry extends javax.swing.JFrame {
 
         addressInput.setText("address");
 
-        jLabel1.setText("Last Name");
+        jLabel1.setText("jLabel1");
 
-        jLabel2.setText("First Name");
+        jLabel2.setText("jLabel2");
 
-        jLabel3.setText("Number");
+        jLabel3.setText("jLabel3");
 
-        jLabel4.setText("Address");
+        jLabel4.setText("jLabel4");
 
         jLabel5.setText("Create a Record");
 
@@ -89,7 +89,7 @@ public class CreateBookEntry extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(addressInput)
                     .addComponent(numberInput)
@@ -133,20 +133,26 @@ public class CreateBookEntry extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        new MainPhonebookUI().setVisible(true);
+        new PhonebookUITest().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
-        lastnameInput.getText();
-        nameInput.getText();
-        numberInput.getText();
-        addressInput.getText();
-        String input = (lastnameInput.getText() + "," + nameInput.getText() + "," +numberInput.getText()+ "," +addressInput.getText());
-        ReadWriteFile info = new ReadWriteFile();
-        //info.fileWriter(input);
-        //AutoIncrementHashMap info = new AutoIncrementHashMap();
-        //info.put(input);
+        String lastname = lastnameInput.getText();
+        String name = nameInput.getText();
+        String number = numberInput.getText();
+        String address = addressInput.getText();
+        //String[] nodeData = new String[] {lastname, name, number, address};
+        //LinkedListNode.add(new String[] {lastname, name, number, address});
+        //LinkedListNode.add(new String[] {"jackson", "Jack", "081", "WHK"});
+        //String input = (lastnameInput.getText() + "," + nameInput.getText() + "," +numberInput.getText()+ "," +addressInput.getText());
+        //ReadWriteFile info = new ReadWriteFile();
+        //ReadWriteFile.fileWriter("phoneBookInfo.txt");
+        String[] Nodedata = {lastname, name, number, address};
+        LinkedListNode.add(Nodedata);
+        //ReadWriteFile write = new ReadWriteFile();
+        ReadWriteFile.fileWriter(Nodedata);
+        
         
     }//GEN-LAST:event_createButtonActionPerformed
 
@@ -167,13 +173,13 @@ public class CreateBookEntry extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CreateBookEntry.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CreateBookEntry_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CreateBookEntry.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CreateBookEntry_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CreateBookEntry.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CreateBookEntry_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CreateBookEntry.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CreateBookEntry_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -181,7 +187,7 @@ public class CreateBookEntry extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CreateBookEntry().setVisible(true);
+                new CreateBookEntry_1().setVisible(true);
             }
         });
     }
