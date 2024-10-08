@@ -194,7 +194,7 @@ public class PhonebookUITest extends javax.swing.JFrame {
         AutoIncrementHashMap lastNamePut = new AutoIncrementHashMap();
         lastNamePut.put(lastName);
         ReadWriteFile info = new ReadWriteFile();
-        info.fileWriter();
+        //info.fileWriter();
         System.out.println(lastNamePut.get(1));
     }//GEN-LAST:event_saveButtonActionPerformed
 
@@ -250,7 +250,7 @@ public class PhonebookUITest extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField lastnameFind;
     private javax.swing.JTextField nameFind;
