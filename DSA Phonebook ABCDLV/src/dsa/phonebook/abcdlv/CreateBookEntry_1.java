@@ -151,7 +151,7 @@ public class CreateBookEntry_1 extends javax.swing.JFrame {
         String[] Nodedata = {lastname, name, number, address};
         LinkedListNode.add(Nodedata);
         //ReadWriteFile write = new ReadWriteFile();
-        ReadWriteFile.fileWriter(Nodedata);
+        ReadWriteFile_1.fileWriter(Nodedata);
         
         
     }//GEN-LAST:event_createButtonActionPerformed

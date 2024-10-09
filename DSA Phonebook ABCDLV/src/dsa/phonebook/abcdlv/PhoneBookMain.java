@@ -24,7 +24,7 @@ public class PhoneBookMain {
         String[] data = {"Asano", "Erica", "23", "Green Stone"};
         LinkedListNode.add(data);
         ReadWriteFile write = new ReadWriteFile();
-        ReadWriteFile.fileWriter(data);
+        ReadWriteFile_1.fileWriter(data);
         
         //boolean endOfFile = false;
         //while (!endOfFile){
