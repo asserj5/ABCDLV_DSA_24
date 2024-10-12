@@ -2,7 +2,7 @@ The reason for this repository is to do a proposed project for DSA Class 2024 se
 To assist a Namibian telecommunications company to create an efficient phonebook,
 based on basic linear data structures, to deliver reasonably efficient performance for typical phonebook operations. 
 
-Group ABCDLV's approach is to incorporate a HashMap to store the phonebook data.
+Group ABCDLV's approach is to incorporate a Linked List to store the phonebook data.
 A Graphical user interface (GUI) is used to provide a user friendly way to interact with  the data.
 Functions used to achieve the required operations are listed below.
 Insert -
