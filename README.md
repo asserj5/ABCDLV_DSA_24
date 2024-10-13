@@ -24,7 +24,7 @@ Search - Based on the linear search algorithm,\
 Delete ,\
 Update, 
 
-A pseudocode and flowchart are provided to interpret how the code(java) works.\
+A pseudocode and flowchart are provided to interpret how the code(java) works.
 
 Group member names listed below.\
 Joseph A,\
