@@ -167,8 +167,12 @@ public class UpdateScreen_1 extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Name cannot be empty.");
         return;
     }
+    
         String[] Nodedata = {lastname, name, number, address};
         ReadWriteFile_1.fileWriter(Nodedata);
+        
+        
+        
         //BufferedWriter writeDetails = new BufferedWriter(new FileWriter("phoneBookInfo.txt", true));
     }//GEN-LAST:event_updateButtonActionPerformed
 

@@ -4,10 +4,16 @@
  */
 package dsa.phonebook.abcdlv;
 
+import dsa.phonebook.abcdlv.ReadWriteFile_1;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import javax.swing.JOptionPane;
 
+    private static class Nodedata {
+
+        public Nodedata() {
+        }
+    }
 /**
  *
  * @author Vsat2
@@ -165,17 +171,17 @@ public class UpdateScreentest extends javax.swing.JFrame {
         
         // add prompt to confirm name/index
           String nameToEdit = JOptionPane.showInputDialog("Please provide the name to edit:");
-    if (nameToEdit == null || nameToEdit.trim().isEmpty()) {
-        JOptionPane.showMessageDialog(null, "Name cannot be empty.");
-        return;
+           if (nameToEdit == null || nameToEdit.trim().isEmpty()) {
+           JOptionPane.showMessageDialog(null, "Name cannot be empty.");
+          // return;
     }
      // Read data from the file
     
-    //ufferedReader readDetails = new BufferedReader(new FileReader("phoneBookInfo.txt"));
+    //BufferedReader readDetails = new BufferedReader(new FileReader("phoneBookInfo.txt"));
     // Check if data exists
     //if (readDetails == null) {
-        JOptionPane.showMessageDialog(null, "No entry found for the provided name.");
-        return;
+        //JOptionPane.showMessageDialog(null, "No entry found for the provided name.");
+        //return;
     }
         //String[] Nodedata = {lastname, name, number, address};
         //ReadWriteFile_1.fileWriter(Nodedata);
@@ -239,4 +245,4 @@ public class UpdateScreentest extends javax.swing.JFrame {
     private javax.swing.JTextField numberInput;
     private javax.swing.JButton updateButton;
     // End of variables declaration//GEN-END:variables
-}
+
