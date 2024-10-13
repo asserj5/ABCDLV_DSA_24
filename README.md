@@ -15,14 +15,14 @@ MainPhonebookUI_1,\
 PhoneBookMain,\
 ReadWriteFile_1,\
 SearchContact,\
-UpdateScreen_1,\
+UpdateScreen_1, 
 
 
 Operations,\
 Insert - Create Function ,\
 Search - Based on the linear search algorithm,\
 Delete ,\
-Update,\
+Update, 
 
 A pseudocode and flowchart are provided to interpret how the code(java) works.\
 
@@ -32,5 +32,5 @@ Batista E,\
 DeWaal C 200324543,\
 Mouton J 224093460,\
 Riekert L,\
-Kandara V.\
+Kandara V.
 
