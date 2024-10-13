@@ -21,8 +21,8 @@ UpdateScreen_1,
 Operations,\
 Insert - Create Function ,\
 Search - Based on the linear search algorithm,\
-Delete ,\
-Update, 
+Delete Using a loop to iterate through the contacts until locted and deleted.\
+Update  
 
 A pseudocode and flowchart are provided to interpret how the code(java) works.
 
