@@ -19,7 +19,7 @@ UpdateScreen_1,\
 
 
 Operations,\
-Insert / Create Function ,\
+Insert - Create Function ,\
 Search - Based on the linear search algorithm,\
 Delete ,\
 Update,\
