@@ -4,6 +4,8 @@
  */
 package dsa.phonebook.abcdlv;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Leon Riekert
@@ -62,13 +64,13 @@ public class CreateBookEntry_1 extends javax.swing.JFrame {
 
         addressInput.setText("address");
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Lastname");
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("Name");
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Number");
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setText("Address");
 
         jLabel5.setText("Create a Record");
 
@@ -89,7 +91,7 @@ public class CreateBookEntry_1 extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(addressInput)
                     .addComponent(numberInput)
@@ -133,25 +135,27 @@ public class CreateBookEntry_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        new PhonebookUITest().setVisible(true);
-        this.dispose();
+        new MainPhonebookUI_1().setVisible(true); //go back to the main phonebook screen
+        this.dispose();    // close the current window
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
-        String lastname = lastnameInput.getText();
-        String name = nameInput.getText();
-        String number = numberInput.getText();
-        String address = addressInput.getText();
-        //String[] nodeData = new String[] {lastname, name, number, address};
-        //LinkedListNode.add(new String[] {lastname, name, number, address});
-        //LinkedListNode.add(new String[] {"jackson", "Jack", "081", "WHK"});
-        //String input = (lastnameInput.getText() + "," + nameInput.getText() + "," +numberInput.getText()+ "," +addressInput.getText());
-        //ReadWriteFile info = new ReadWriteFile();
-        //ReadWriteFile.fileWriter("phoneBookInfo.txt");
-        String[] Nodedata = {lastname, name, number, address};
-        LinkedListNode.add(Nodedata);
-        //ReadWriteFile write = new ReadWriteFile();
-        ReadWriteFile_1.fileWriter(Nodedata);
+        String lastname = lastnameInput.getText();    //creating variable for the text received the the text field
+        String name = nameInput.getText();            //creating variable for the text received the the text field
+        String number = numberInput.getText();        //creating variable for the text received the the text field
+        String address = addressInput.getText();      //creating variable for the text received the the text field
+        
+        String[] Nodedata = {lastname, name, number, address};   //Creating a String array to store the text received fro the user
+        LinkedListNode.add(Nodedata);    // adding the array to the linked list
+        
+        try{
+        ReadWriteFile_1.fileWriter(Nodedata);   //call the ReadWriteFile class to write the data to the text file
+        JOptionPane.showMessageDialog(null,"Details saved successfully.");   //show confirmation message when the captured data is written to the .txt file
+        }
+        catch(Exception e){
+            JOptionPane.showConfirmDialog(null, e.getMessage());  //display a message should the writing of the details to .txt file fail.
+        }
+        
         
         
     }//GEN-LAST:event_createButtonActionPerformed
