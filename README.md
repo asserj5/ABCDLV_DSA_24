@@ -19,10 +19,10 @@ UpdateScreen_1,
 
 
 Operations,\
-Insert - Create Function ,\
-Search - Based on the linear search algorithm,\
-Delete Using a loop to iterate through the contacts until locted and deleted.\
-Update  
+Insert - Add new user data. ,\
+Search - Search for user details, based on the linear search algorithm,\
+Delete - Using a loop to iterate through the contacts until located then deleted.\
+Update - Searches for user to update then write to file after confirmation.
 
 A pseudocode and flowchart are provided to interpret how the code(java) works.
 
