@@ -8,21 +8,21 @@ Group ABCDLV's approach is to incorporate a Linked List to store the phonebook d
 A Graphical user interface (GUI) is used to provide a user friendly way to interact with  the data.
 Functions used to achieve the required operations are listed below.
 Modules 
-CreateBookEntry_1
-LinkedListNode
-LinkedListSorting
-MainPhonebookUI_1
-PhoneBookMain
-ReadWriteFile_1
-SearchContact
-UpdateScreen_1
+CreateBookEntry_1,
+LinkedListNode,
+LinkedListSorting,
+MainPhonebookUI_1,
+PhoneBookMain,
+ReadWriteFile_1,
+SearchContact,
+UpdateScreen_1,
 
 
-Operations
-Insert / Create Function -
-Search - Based on the linear search algoritm
-Delete -
-Update-
+Operations,
+Insert / Create Function ,
+Search - Based on the linear search algorithm,
+Delete ,
+Update,
 
 A pseudocode and flowchart are provided to interpret how the code(java) works.
 
