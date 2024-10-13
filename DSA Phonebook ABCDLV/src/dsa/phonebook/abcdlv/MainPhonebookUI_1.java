@@ -179,7 +179,7 @@ public class MainPhonebookUI_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_nameSearchActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        new UpdateScreen().setVisible(true);
+        new UpdateScreen_1().setVisible(true);
         this.dispose();
         
     }//GEN-LAST:event_jButton4ActionPerformed
