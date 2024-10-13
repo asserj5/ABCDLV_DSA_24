@@ -11,3 +11,4 @@ piet,pompies,081,address
 piet,pompies,081,address
 piet,pompies,081,address
 lastnameInput,nameInput,number,address
+koos,nameInput,number,address
