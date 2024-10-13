@@ -27,10 +27,10 @@ Update
 A pseudocode and flowchart are provided to interpret how the code(java) works.
 
 Group member names listed below.\
-Joseph A,\
-Batista E,\
+Joseph A,222079983\
+Batista E, 212021443\
 DeWaal C 200324543,\
 Mouton J 224093460,\
-Riekert L,\
-Kandara V.
+Riekert L,224082353\
+Kandara V. 216004942
 
