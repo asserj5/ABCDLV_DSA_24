@@ -7,19 +7,22 @@ based on basic linear data structures, to deliver reasonably efficient performan
 Group ABCDLV's approach is to incorporate a Linked List to store the phonebook data.\
 A Graphical user interface (GUI) is used to provide a user friendly way to interact with  the data.\
 Functions used to achieve the required operations are listed below.\
+The linkded list should populate and sort at the start of the application. It should then display all the contacts in the main phonebook screen. \
+When closing the application all data in the linked list will write to the .txt document overwriting old data to ensure only current data is available. \
+
 Modules\
-CreateBookEntry_1\
-LinkedListNode\
-LinkedListSorting,\
-MainPhonebookUI_1,\
-PhoneBookMain,\
-ReadWriteFile_1,\
-SearchContact,\
-UpdateScreen_1, 
+CreateBookEntry_1  (Leon Riekert),\
+LinkedListNode (Leon Riekert),\
+LinkedListSorting  (Leon Riekert),\
+MainPhonebookUI_1 (Leon Riekert),\
+PhoneBookMain  (Leon Riekert),\
+ReadWriteFile_1  (Leon Riekert),\
+SearchContact  (Chanelle De Waal),\
+UpdateScreen_1  (Johannes Mouton),
 
 
 Operations,\
-Insert - Add new user data. ,\
+Insert/create - Add phonebook entry. ,\
 Search - Search for user details, based on the linear search algorithm,\
 Delete - Using a loop to iterate through the contacts until located then deleted.\
 Update - Searches for user to update then write to file after confirmation.
