@@ -4,6 +4,9 @@
  */
 package dsa.phonebook.abcdlv;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import javax.swing.JOptionPane;
 
 /**
@@ -160,6 +163,19 @@ public class UpdateScreen_1 extends javax.swing.JFrame {
         String name = nameInput.getText();
         String number = numberInput.getText();
         String address = addressInput.getText();
+        
+        
+          //   try (BufferedReader reader = new BufferedReader(new FileReader("phoneBookInfo.txt"))) {
+            //String line;
+           // while ((line = reader.readLine()) != null) {
+          //      readDetails.add(line);
+          //  }
+        //} catch (IOException e) {
+         //   System.out.println("Error reading file: " + e.getMessage());
+        //}
+
+        // Printing the original list of user details
+        //System.out.println("Original list: " + readDetails);
         
         // add prompt to confirm name/index
                 String nameToEdit = JOptionPane.showInputDialog("Please provide the name to edit:");
