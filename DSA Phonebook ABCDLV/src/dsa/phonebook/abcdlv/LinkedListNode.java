@@ -11,10 +11,11 @@ package dsa.phonebook.abcdlv;
 import java.util.LinkedList;
 public class LinkedListNode {
 
-    
+    LinkedList<String[]> users = new LinkedList<>();
     String[] data;
     LinkedListNode next;
     static LinkedListNode head;
+    
     
     //initialise node with data
     public LinkedListNode(String[] data) {
@@ -30,7 +31,7 @@ public class LinkedListNode {
         }
         else
         {
-            newNode.next = head;
+            newNode.next = head;  //placing the new node into the 
             head = newNode;
         }
     }
@@ -39,5 +40,7 @@ public class LinkedListNode {
     public static LinkedListNode getHead(){
         return head;
     }
+    
+    
     
 }
