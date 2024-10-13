@@ -24,16 +24,16 @@ public class ReadWriteFile_1 {
     {
         BufferedWriter writeDetails = new BufferedWriter(new FileWriter("phoneBookInfo.txt", true)); //access the file and write information to it. The "true" allow the writing of now info without overwriting current info 
         
-       LinkedListNode current = LinkedListNode.getHead();
+       LinkedListNode current = LinkedListNode.getHead();  
         
             
         for (int i = 0; i < current.data.length; i++ ){ 
             if (i <= 2) {
-                writeDetails.write(current.data[i] + ",");
+                writeDetails.write(current.data[i] + ",");   //write the first three data parts and seperate then with a comma
             }
             else
             {
-                writeDetails.write(current.data[i] + "\n");
+                writeDetails.write(current.data[i] + "\n");    //ensure data writes to a new line every time after the last data is added
             }
         
         }
@@ -42,16 +42,16 @@ public class ReadWriteFile_1 {
     }
     catch (IOException e)
     {
-        JOptionPane.showMessageDialog(null, "Could not save data");
+        JOptionPane.showMessageDialog(null, "Could not save data");  //
     }
     }
     
     public static void fileReader(){
         try
         {
-            BufferedReader readDetails = new BufferedReader(new FileReader("phoneBookInfo.txt"));
+            BufferedReader readDetails = new BufferedReader(new FileReader("phoneBookInfo.txt"));   
             String line;
-            while ((line = readDetails.readLine()) != null)
+            while ((line = readDetails.readLine()) != null)  //read from the file as until the end of the document
             {
             System.out.println(line);
             }
