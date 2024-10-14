@@ -6,7 +6,7 @@ based on basic linear data structures, to deliver reasonably efficient performan
 
 Group ABCDLV's approach is to incorporate a Linked List to store the phonebook data.\
 A Graphical user interface (GUI) is used to provide a user friendly way to interact with  the data.\
-Functions used to achieve the required operations are listed below.\
+The Functions used to achieve the required operations are listed below.\
 The linkded list should populate and sort at the start of the application. It should then display all the contacts in the main phonebook screen. \
 When closing the application all data in the linked list will write to the .txt document overwriting old data to ensure only current data is available. 
 
